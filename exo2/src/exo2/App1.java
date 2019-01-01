@@ -1,16 +1,17 @@
+package exo2;
 
-        import java.io.BufferedReader;
-        import java.io.FileReader;
-        import java.io.IOException;
-        import java.time.Duration;
-        import java.time.Instant;
-        import java.util.ArrayList;
-        import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.time.Duration;
+import java.time.Instant;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 
-        public class App1 {
+public class App1 {
 
-         public static void main(String[] args) {
+    public static void main(String[] args) {
         Instant start = Instant.now();
         ArrayList<String> names = new ArrayList<>();
         ArrayList<Integer> grades = new ArrayList<>();
@@ -28,19 +29,19 @@
                 line = reader.readLine();
             }
 
+
         } catch (IOException e) {
             e.printStackTrace();
         }
 
         int sum = 0;
-        for (int grade: grades) {
+        for (int grade : grades) {
             sum += grade;
         }
-        int average = sum / names.size();
+        double average = sum / names.size();
 
         System.out.println("The average is " + average + ".");
 
-        // Search user grade
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter user name: ");
         String userName = scanner.next();
@@ -61,6 +62,6 @@
         }
 
         Duration duration = Duration.between(start, Instant.now());
-        System.out.println("Execution time is : " + duration.toMillis() +" "+"ms.");
+        System.out.println("Execution time is : " + duration.toMillis() + " " + "ms.");
     }
 }
