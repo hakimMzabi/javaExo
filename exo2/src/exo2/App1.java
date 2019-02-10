@@ -1,5 +1,5 @@
-package exo2;
-
+ package exo2;
+    //trivial ==> constructeur defaut
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;

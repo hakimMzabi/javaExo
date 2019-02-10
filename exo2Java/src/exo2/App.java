@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
 
-        System.out.println("how many you want lunch");
+        System.out.println("how many time you want lunch");
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
